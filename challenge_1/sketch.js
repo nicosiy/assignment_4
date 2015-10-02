@@ -19,7 +19,7 @@ function setup() {
 
 function draw() {
 	var size = 40;
-	for (var i = 0; i < 40; i++) {
+	for (var i = 0; i < 30; i++) {
 		// Stems
 		fill(38, 120, 55);
 		rect(xPos[i] - 2.5, yPos[i] - 2.5, 5, 100, 20);
