@@ -9,7 +9,7 @@ function setup() {
 	noLoop();
 	colorMode(RGB);
 	background(100, 185, 235);
-	fill(57, 177, 74);
+	fill(50, 150, 70);
 	rect(0, 280, 640, 200);
 	for (var i = 0; i < 40; i++) {
 		xPos[i] = random(0, 640);
