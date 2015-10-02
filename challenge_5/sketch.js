@@ -1,18 +1,33 @@
+//Create createCanvas
 function setup() {
-	// create a place to draw
 	createCanvas(640, 360);
 	noStroke();
-	noLoop();
 }
 
+//Draw Circles and Lines
 function draw() {
-	// clear the background
-	background(150, 150, 50);
+	background(50, 0, 0);
+	if (mouseIsPressed) {
 
-	// set a fill color
-	fill(255, 255, 255);
+		//Line
+		stroke(255);
+		strokeWeight(8);
+		line(50, 50, mouseX, mouseY);
+		//Circle
+		noStroke();
+		fill(255);
+		ellipse(100, 100, 50, 50);
+		ellipse(mouseX, mouseY, 50, 50);
+		//Blue Circle
+		fill(0, 100, 250);
+		ellipse(100, 100, 30, 30);
+		ellipse(mouseX, mouseY, 30, 30);
 
-	// draw the ellipse
-	var diameter = random(100, 200);
-	ellipse(320, 180, diameter, diameter);
+
+	} else {
+		fill(255);
+		ellipse(mouseX, mouseY, 50, 50);
+		fill(0, 100, 250);
+		ellipse(mouseX, mouseY, 30, 30);
+	}
 }
